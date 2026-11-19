@@ -1,6 +1,7 @@
 import { Component, lazy, Suspense, useEffect, type ErrorInfo, type ReactNode } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Loader2 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ToolsDirectoryPage from './pages/ToolsDirectoryPage';
@@ -109,6 +110,7 @@ export default function App() {
             </Routes>
           </Suspense>
         </Layout>
+        <SpeedInsights />
       </BrowserRouter>
     </AppErrorBoundary>
   );
