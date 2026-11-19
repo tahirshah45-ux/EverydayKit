@@ -1,0 +1,25 @@
+# EverydayKit robots.txt — Search Engine & AI Search Crawler Directives
+# Allows indexing of all public tool and documentation routes.
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://everydaykit.app/sitemap.xml
